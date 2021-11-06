@@ -1,2 +1,3 @@
-# SP-Lab1
- Laboratorul 1
+# SP-Lab2
+
+lab2

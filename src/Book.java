@@ -1,28 +1,43 @@
-public class Book {
-    private String name = "";
-    private String text = "";
+import java.util.ArrayList;
 
-    public Book(String name) {
-        this.name = name;
+public class Book extends Section {
+    private final String title;
+    private ArrayList<Chapter> chapterList = new ArrayList<Chapter>();
+    //private Author author;
+    // private List<Author> authors;
+    private final ArrayList<Author> autor;
+
+    public Book(String title) {
+        super(title);
+        this.title = title;
+        this.autor = new ArrayList<Author>();
     }
 
-    public void createNewParagraph(String str) {
-        this.text = this.text + str;
-        this.text += "\n";
+    public void addAuthor(Author autor) {
+        this.autor.add(autor);
     }
 
-    public void createNewImage(String str) {
-        this.text = this.text + str ;
-        this.text += "\n";
+    /*
+        public void print() {
+            System.out.println(this.title);
+        }
+    */
+    public ArrayList<Chapter> getChapterList() {
+        return chapterList;
     }
 
-    public void createNewTable(String str) {
-        this.text = this.text + str ;
-        this.text += "\n";
+    public void setChapterList(ArrayList<Chapter> chapterList) {
+        this.chapterList = chapterList;
     }
 
     public void print() {
-        System.out.println(this.text);
+        System.out.println("Book: " + this.title);
+
+        System.out.println("Authors: ");
+        for (Author i : this.autor) {
+            System.out.print("Author: ");
+            i.print();
+        }
     }
 
 }
