@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class Section implements Element {
 
-    private final String title;
-    private final ArrayList<Element> elements;
+    protected String title;
+    protected ArrayList<Element> elements;
 
     public Section(String title) {
         this.title = title;
