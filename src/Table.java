@@ -21,9 +21,5 @@ public class Table implements Element {
 
     }
 
-    @Override
-    public Element get(int index) {
 
-        return null;
-    }
 }
