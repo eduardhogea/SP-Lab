@@ -7,3 +7,8 @@
 
  - remove chapter, subchapter, they are no longer needed as there is section
  - in book, instead of chapters, now there can be elements to be added, elements that are managed in section class
+
+# Feedback lab4:
+https://github.com/eduardhogea/SP-Lab/tree/f4c43f44a9fc98535820a7a03ccc353c5b257a38
+
+all good
