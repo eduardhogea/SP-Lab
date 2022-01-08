@@ -1,8 +1,10 @@
 public class Paragraph implements Element {
     private final String text;
+    private AlignStrategy strategy;
 
-    public Paragraph(String text) {
-        this.text = text;
+    public Paragraph(String str) {
+        this.text = str;
+        this.strategy = null;
     }
 
     public void print() {
@@ -18,5 +20,7 @@ public class Paragraph implements Element {
     public void remove(Element element) {
 
     }
-
+    public void setAlignStrategy(AlignStrategy strategy) {
+        this.strategy = strategy;
+    }
 }
