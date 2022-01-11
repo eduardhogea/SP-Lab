@@ -23,4 +23,10 @@ public class Paragraph implements Element {
     public void setAlignStrategy(AlignStrategy strategy) {
         this.strategy = strategy;
     }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
 }

@@ -41,4 +41,9 @@ public class Image implements Picture, Element {
     public void content() {
 
     }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
 }

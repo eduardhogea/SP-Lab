@@ -18,6 +18,12 @@ public class Section implements Element {
     public void add(Element element) {
         this.elements.add(element);
     }
+    public void accept(Visitor visitor) {
+        for(Element x:elements) {
+            x.accept(visitor);
+        }
+        visitor.visit(this);
+    }
 
     @Override
     public void remove(Element element) {

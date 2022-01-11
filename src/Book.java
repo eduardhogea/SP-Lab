@@ -25,6 +25,12 @@ public class Book extends Section implements Element {
         }
     */
     @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+
+    @Override
     public void print() {
         System.out.println("Book: " + this.title);
 

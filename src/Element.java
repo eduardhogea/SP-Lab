@@ -6,4 +6,5 @@ interface Element {
 
     void remove(Element element);
 
+    public void accept(Visitor visitor);
 }
